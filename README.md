@@ -26,6 +26,14 @@ https://csc3221-transactions3-demo-f485be8e8a79.herokuapp.com
 <img width="2940" height="1912" alt="5E815A81-90AA-4FA0-9934-C3764A34ED8F" src="https://github.com/user-attachments/assets/dab3c2b3-272b-4217-a487-860b3163dd00" />
 
 4=Differences: What differences did you note from deploy-app-02-s26 and deploy-app-03-s26?
+One major difference between deploy-app-02-s26 and deploy-app-03-s26 was the addition of authentication and security features using JWT (JSON Web Tokens). In deploy-app-03-s26, users now have to register and log in before accessing protected transaction routes. This made the application more realistic and secure compared to the previous assignment. Another difference was the use of authentication middleware to verify tokens before allowing access to certain API endpoints. Passwords were also hashed before being stored in MongoDB, which improved security significantly
+
 5=Models: What model code do you prefer, 02's or 03's? (See models and controllers)
+
+I prefer the model code from deploy-app-03-s26 because it is more secure and structured. The addition of authentication, JWT handling, password hashing, and protected routes made the application feel more complete and realistic. I also liked how the controllers and middleware worked together to separate responsibilities clearly. Even though deploy-app-03-s26 was more complex and required more debugging, it helped me better understand how real backend applications manage users and secure data.
+
+
 6=Challenges: Write the challenges you faced during this exercise and how you solved them
+One challenge I faced during this exercise was working with MongoDB Atlas and the database connection setup. At first, I thought I was not allowed to reuse the free cluster I had already created for a previous class assignment, so I assumed I needed to create a completely new cluster. I was worried because some MongoDB Atlas options looked like they required payment, and I thought creating another cluster might cost money. After troubleshooting and researching more, I realized that I could safely reuse my existing free cluster by simply creating a different database for this project. Another challenge I faced was debugging deployment and environment variable issues on Heroku, especially when the application could not connect to MongoDB correctly.
+
 7=Questions: Write any questions you still have after this exercise about the code that was here
